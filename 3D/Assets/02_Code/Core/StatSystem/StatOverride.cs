@@ -11,5 +11,16 @@ namespace _02_Code.Core.StatSystem
         [SerializeField] private float overrideValue;
 
         public StatOverride(StatSO stat) => this.stat = stat;
+        
+        public StatSO CreateStat()
+        {
+            StatSO newStat = stat.Clone() as StatSO;
+            Debug.Assert(newStat != null, $"{stat.statName} clone failed");
+
+            if(isUseOverride)
+                newStat.BaseValue = overrideValue;
+
+            return newStat;
+        }
     }
 }

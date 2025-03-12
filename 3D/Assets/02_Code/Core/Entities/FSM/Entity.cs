@@ -33,7 +33,7 @@ namespace _02_Code.Core.Entities.FSM
             _components.Values.OfType<IAfterInit>().ToList().ForEach(compo => compo.AfterInit());
         }
 
-        public T GetCompo<T>(bool isDervied) where T : IEntityComponent
+        public T GetCompo<T>(bool isDervied = false) where T : IEntityComponent
         {
             if(_components.TryGetValue(typeof(T), out IEntityComponent component))
                 return (T)component;

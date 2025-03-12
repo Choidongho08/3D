@@ -86,9 +86,12 @@ namespace _02_Code.Core.StatSystem
             TryInvokeValueChange(Value, previousValue);
         }
         
-        private void TryInvokeValueChange(float value, float previousValue)
+        private void TryInvokeValueChange(float current, float previousValue)
         {
-            
+            if (Mathf.Approximately(current, previousValue) == false)
+            {
+                OnValueChange?.Invoke(this, current, previousValue);
+            }
         }
         
         public object Clone() => Instantiate(this);
