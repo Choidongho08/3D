@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e0bbac-85c7-4fd8-8eea-a5e162d18f6a" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityMover.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityMover.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityStat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/StatSystem/StatOverride.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/StatSystem/StatOverride.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/StatSystem/StatSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/StatSystem/StatSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Player/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Player/PlayerMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Player/PlayerMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Code/SO/PlayerInputSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/SO/PlayerInputSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityAnimator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityAnimator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/StateDataSO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/StateDataSO.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dongho&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.23f1\Editor\Unity.exe" />
@@ -121,6 +120,8 @@
       <workItem from="1741569555238" duration="4509000" />
       <workItem from="1741676506785" duration="2019000" />
       <workItem from="1741702846992" duration="1847000" />
+      <workItem from="1741785086944" duration="4683000" />
+      <workItem from="1741871675266" duration="1246000" />
     </task>
     <servers />
   </component>
