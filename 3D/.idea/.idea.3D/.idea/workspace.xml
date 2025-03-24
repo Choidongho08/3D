@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32e0bbac-85c7-4fd8-8eea-a5e162d18f6a" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityAnimator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/EntityStateMachine.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/StateDataSO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/StateDataSO.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/Front.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/Front/CameraRotate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/Front/CameraRotate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerCanAttackState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerCanAttackState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerCanIdleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerCanIdleState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerMoveState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerMoveState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/02_Code/Player/States/PlayerState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityAnimator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityAnimator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityMover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityMover.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityRenderer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/FSM/EntityRenderer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/StateDataSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Core/Entities/State/StateDataSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Code/SO/PlayerInputSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Code/SO/PlayerInputSO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputSetting/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/InputSetting/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/InputSetting/PlayerInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/InputSetting/PlayerInput.inputactions" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +133,9 @@
       <workItem from="1741676506785" duration="2019000" />
       <workItem from="1741702846992" duration="1847000" />
       <workItem from="1741785086944" duration="4683000" />
-      <workItem from="1741871675266" duration="1246000" />
+      <workItem from="1741871675266" duration="3396000" />
+      <workItem from="1742304849317" duration="1342000" />
+      <workItem from="1742820629951" duration="3122000" />
     </task>
     <servers />
   </component>

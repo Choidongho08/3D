@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace _02_Code.Core.Entities.FSM
 {
-    public class EntityAnimator : IEntityComponent
+    public class EntityAnimator : MonoBehaviour, IEntityComponent
     {
         [SerializeField] private Animator animator;
         

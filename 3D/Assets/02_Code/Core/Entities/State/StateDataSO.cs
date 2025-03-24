@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace _02_Code.Core.Entities.State
 {
-    [CreateAssetMenu(menuName = "StateDataSO", fileName = "SO/FSM/StateData")]
+    [CreateAssetMenu(menuName = "SO/FSM/StateData", fileName = "StateData")]
     public class StateDataSO : ScriptableObject
     {
         public string stateName;

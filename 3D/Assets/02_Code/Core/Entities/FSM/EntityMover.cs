@@ -88,7 +88,7 @@ namespace _02_Code.Core.Entities.FSM
         private void FixedUpdate()
         {
             CalculateMovement();
-            Rotate();
+            ApplyGravity();
             Move();
         }
         
@@ -97,6 +97,16 @@ namespace _02_Code.Core.Entities.FSM
             _velocity = _movementDirection;
             _velocity *= _moveSpeed * Time.fixedDeltaTime * _moveSpeedMultiplier;
         }
+        
+        private void ApplyGravity()
+        {
+            if (IsGround && _verticalVelocity < 0)
+                _verticalVelocity = -0.03f; //살짝 아래로 당겨주는 힘
+            else
+                _verticalVelocity += gravity * Time.fixedDeltaTime;
+            
+            _velocity.y = _verticalVelocity;
+        }
 
         private void Move()
         {
@@ -104,20 +114,6 @@ namespace _02_Code.Core.Entities.FSM
             {
                 characterController.Move(_velocity);
             }
-        }
-
-        private void Rotate()
-        {
-            float mouseX = _mouseLookInput.x * mouseSensitivity * Time.fixedDeltaTime;
-            float mouseY = _mouseLookInput.y * mouseSensitivity * Time.fixedDeltaTime;
-            
-            xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-            
-            yRotation += mouseX;
-            
-            Transform parent = _entity.transform;
-            parent.rotation = Quaternion.Euler(xRotation, yRotation, 0f);
         }
     }
 }

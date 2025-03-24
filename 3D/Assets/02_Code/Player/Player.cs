@@ -1,35 +1,38 @@
+using System;
 using UnityEngine;
 using _02_Code.Core.Entities.FSM;
+using _02_Code.Core.Entities.State;
 using Code.SO;
 
 namespace _02_Code.Player
 {
     public class Player : Entity
     {
-        [SerializeField] private PlayerInputSO playerInput;
+        [field: SerializeField] public PlayerInputSO PlayerInput { get; private set; }
+        [field: SerializeField] public float MouseSensitivity { get; private set; }
         
-        private EntityMover _movement;
+        [SerializeField] private StateDataSO[] stateDataList;
+        
+        private EntityStateMachine _stateMachine;
+        
+        
         protected override void Awake()
         {
             base.Awake();
-            _movement = GetCompo<EntityMover>();
-            playerInput.OnMovementChange += HandleMovementChange;
-            playerInput.OnMouseLookChange += HandleMouseLookChange;
-        }
-        
-        private void OnDestroy()
-        {
-            playerInput.OnMovementChange -= HandleMovementChange;
-            playerInput.OnMouseLookChange -= HandleMouseLookChange;
+
+            _stateMachine = new EntityStateMachine(this, stateDataList);
         }
 
-        private void HandleMovementChange(Vector2 movementInput)
+        private void Start()
         {
-            _movement.SetMovementDirection(movementInput);
+            _stateMachine.ChangeState("IDLE");
         }
-        private void HandleMouseLookChange(Vector2 mouseLookInput)
+
+        private void Update()
         {
-            _movement.SetMouseLookInput(mouseLookInput);
+            _stateMachine.UpdateStateMachine();
         }
+
+        public void ChangeState(string newStateName) => _stateMachine.ChangeState(newStateName);
     }
 }

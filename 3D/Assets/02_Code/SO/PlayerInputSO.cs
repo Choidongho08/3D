@@ -5,12 +5,18 @@ using UnityEngine.InputSystem;
 
 namespace Code.SO
 {
+    public delegate void ValueChange();
+    
     [CreateAssetMenu(fileName = "PlayerInputSO", menuName = "SO/PlayerInput", order = 0)]
     public class PlayerInputSO : ScriptableObject, PlayerInput.IPlayerActions
     {
-        public event Action<Vector2> OnMovementChange;
-        public event Action<Vector2> OnMouseLookChange;
+        public Vector2 MovementKey { get; private set; }
+        public Vector2 MouseLookKey { get; private set; }
+
+        public event ValueChange MouseLookValueChange;
+        
         public event Action OnJumpKeyPressed;
+        public event Action OnAttackKeyPressed;
 
         private PlayerInput _playerInput;
 
@@ -32,7 +38,7 @@ namespace Code.SO
         public void OnMove(InputAction.CallbackContext context)
         {
             Vector2 move = context.ReadValue<Vector2>();
-            OnMovementChange?.Invoke(move);
+            MovementKey = move;
         }
 
         public void OnJump(InputAction.CallbackContext context)
@@ -43,7 +49,17 @@ namespace Code.SO
 
         public void OnMouseLook(InputAction.CallbackContext context)
         {
-            OnMouseLookChange?.Invoke(context.ReadValue<Vector2>());
+            Vector2 prevValue = MouseLookKey;
+            MouseLookKey = context.ReadValue<Vector2>();
+            
+            if(prevValue != MouseLookKey)
+                MouseLookValueChange?.Invoke();
+        }
+
+        public void OnAttack(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+                OnAttackKeyPressed?.Invoke();
         }
     }
 }
